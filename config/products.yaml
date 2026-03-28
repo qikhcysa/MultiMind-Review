@@ -1,0 +1,81 @@
+# 商品知识库配置 / Product Knowledge Base Configuration
+products:
+  - id: phone_001
+    name: 智能手机 Pro Max
+    brand: TechBrand
+    category: 电子产品/手机
+    description: 旗舰智能手机，搭载最新处理器，配备超大屏幕和高性能摄像头
+    features:
+      - 6.7英寸OLED屏幕
+      - 5000mAh大电池
+      - 1亿像素主摄
+      - 5G网络支持
+    keywords:
+      - 手机
+      - 智能手机
+      - 手机pro
+      - techbrand手机
+
+  - id: laptop_001
+    name: 轻薄笔记本电脑 Air
+    brand: TechBrand
+    category: 电子产品/电脑
+    description: 超轻薄商务本，长续航，适合商务出行和日常办公
+    features:
+      - 14英寸2K屏幕
+      - 重量仅1.2kg
+      - 20小时续航
+      - Intel i7处理器
+    keywords:
+      - 笔记本
+      - 电脑
+      - 轻薄本
+      - 商务本
+
+  - id: headphones_001
+    name: 无线降噪耳机 Pro
+    brand: AudioBrand
+    category: 电子产品/音频
+    description: 头戴式主动降噪耳机，提供沉浸式音乐体验
+    features:
+      - 主动降噪技术
+      - 30小时续航
+      - 蓝牙5.2
+      - Hi-Fi音质
+    keywords:
+      - 耳机
+      - 降噪耳机
+      - 头戴耳机
+      - 无线耳机
+
+  - id: sneaker_001
+    name: 运动跑步鞋 Ultra
+    brand: SportsBrand
+    category: 运动/鞋类
+    description: 专业跑步运动鞋，配备先进缓震技术，适合长跑和日常运动
+    features:
+      - 高弹缓震大底
+      - 透气网面鞋面
+      - 轻量化设计
+      - 支撑稳定性
+    keywords:
+      - 跑鞋
+      - 运动鞋
+      - 跑步鞋
+      - 球鞋
+
+  - id: bag_001
+    name: 商务双肩背包
+    brand: BagBrand
+    category: 箱包/背包
+    description: 大容量商务背包，防水防盗，适合通勤和商务出行
+    features:
+      - 防水面料
+      - 隐藏式防盗拉链
+      - 笔记本电脑夹层
+      - 30L大容量
+    keywords:
+      - 背包
+      - 双肩包
+      - 商务包
+      - 书包
