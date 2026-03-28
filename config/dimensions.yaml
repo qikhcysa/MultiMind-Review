@@ -1,0 +1,93 @@
+# 情感分析维度配置 / Sentiment Analysis Dimensions Configuration
+dimensions:
+  - id: quality
+    name: 产品质量
+    name_en: Product Quality
+    description: 产品的整体质量、耐用性、做工等方面
+    keywords:
+      - 质量
+      - 做工
+      - 耐用
+      - 品质
+      - 材质
+      - 工艺
+      - quality
+      - durable
+      - material
+
+  - id: price
+    name: 价格性价比
+    name_en: Price/Value
+    description: 产品的定价、性价比、折扣优惠等方面
+    keywords:
+      - 价格
+      - 贵
+      - 便宜
+      - 划算
+      - 性价比
+      - 优惠
+      - price
+      - value
+      - cheap
+      - expensive
+
+  - id: delivery
+    name: 物流配送
+    name_en: Delivery
+    description: 发货速度、包装、物流跟踪等方面
+    keywords:
+      - 发货
+      - 物流
+      - 配送
+      - 快递
+      - 包装
+      - 到货
+      - delivery
+      - shipping
+      - package
+
+  - id: service
+    name: 客户服务
+    name_en: Customer Service
+    description: 售前咨询、售后服务、退换货政策等方面
+    keywords:
+      - 客服
+      - 售后
+      - 服务
+      - 退款
+      - 换货
+      - 态度
+      - service
+      - support
+      - refund
+
+  - id: appearance
+    name: 外观设计
+    name_en: Appearance
+    description: 产品的外观、颜色、设计风格等方面
+    keywords:
+      - 外观
+      - 颜值
+      - 好看
+      - 设计
+      - 颜色
+      - 漂亮
+      - appearance
+      - design
+      - color
+      - look
+
+  - id: function
+    name: 功能性能
+    name_en: Functionality
+    description: 产品的核心功能、性能表现、使用体验等方面
+    keywords:
+      - 功能
+      - 性能
+      - 效果
+      - 使用
+      - 体验
+      - 操作
+      - function
+      - performance
+      - feature
