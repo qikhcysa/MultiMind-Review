@@ -116,8 +116,7 @@ class DatasetOrchestratorAgent:
             reply = self._react_loop()
         else:
             reply = (
-                "⚠️ LLM 未配置。请在 ⚙️ 配置管理 页面设置 OpenAI API Key，"
-                "或在 .env 文件中配置 OPENAI_API_KEY。"
+                "⚠️ LLM 未配置，请设置 OPENAI_API_KEY 环境变量后使用数据集分析功能。"
             )
 
         self._history.append({"role": "assistant", "content": reply})

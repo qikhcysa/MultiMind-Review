@@ -62,6 +62,11 @@ _EXAMPLE_QUESTIONS: list[str] = [
     "综合评分最低的 5 条评论是哪些？",
 ]
 
+# Column names recognised as the review text column when auto-detecting CSV files
+_CSV_REVIEW_COLUMNS: frozenset[str] = frozenset(
+    {"review", "评论", "text", "content", "评论内容"}
+)
+
 
 # ---------------------------------------------------------------------------
 # Cached pipeline initialisation
@@ -192,7 +197,7 @@ with st.sidebar:
         uploaded = st.file_uploader(
             "上传包含评论的 CSV 文件",
             type=["csv"],
-            help="CSV 需包含 'review'、'评论'、'text' 或 'content' 列",
+            help="CSV 需包含 'review'、'评论'、'text' 或 'content' 等列名",
         )
         if uploaded:
             try:
@@ -200,7 +205,7 @@ with st.sidebar:
                 candidates = [
                     c
                     for c in df.columns
-                    if c.lower() in {"review", "评论", "text", "content", "评论内容"}
+                    if c.lower() in _CSV_REVIEW_COLUMNS
                 ]
                 if candidates:
                     review_col = candidates[0]

@@ -382,7 +382,8 @@ class DatasetToolExecutor:
             if sentiment_filter and r.overall_sentiment != sentiment_filter:
                 continue
             if product_filter:
-                if not r.product_match or product_filter.lower() not in r.product_match.product_name.lower():
+                pname = r.product_match.product_name if r.product_match else ""
+                if product_filter.lower() not in pname.lower():
                     continue
             if dim_filter:
                 dim_ids = {ds.dimension_id for ds in r.dimension_scores}
