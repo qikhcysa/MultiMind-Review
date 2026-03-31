@@ -4,6 +4,7 @@ from src.agents.dimension_agent import DimensionDetectionAgent
 from src.agents.evidence_agent import EvidenceRetrievalAgent
 from src.agents.scoring_agent import SentimentScoringAgent
 from src.agents.orchestrator_agent import OrchestratorAgent
+from src.agents.dataset_agent import DatasetOrchestratorAgent
 
 __all__ = [
     "ProductRecognitionAgent",
@@ -11,4 +12,5 @@ __all__ = [
     "EvidenceRetrievalAgent",
     "SentimentScoringAgent",
     "OrchestratorAgent",
+    "DatasetOrchestratorAgent",
 ]
